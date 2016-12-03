@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 /**
  * Created by valdar on 02/12/16.
  */
-public class Day1aTests {
+public class Day1Tests {
 
     @Test
     public void inputParsingTest() {
