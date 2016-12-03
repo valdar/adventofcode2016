@@ -6,9 +6,9 @@ Refer to http://adventofcode.com/2016/1
 #to build it
 mvn clean package
 #to run the part 1 solver
-java -jar target/day1a-1.0-SNAPSHOT.jar ./src/test/resources/input.txt false
+java -jar target/day1ab-1.0-SNAPSHOT.jar ./src/test/resources/input.txt false
 #to run the part 2 solver
-java -jar target/day1a-1.0-SNAPSHOT.jar ./src/test/resources/input.txt true
+java -jar target/day1ab-1.0-SNAPSHOT.jar ./src/test/resources/input.txt true
 ```
 
 ## Day 1: No Time for a Taxicab
