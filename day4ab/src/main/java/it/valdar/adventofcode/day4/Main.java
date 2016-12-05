@@ -1,15 +1,8 @@
-package it.valdar.adventofcode.day3;
+package it.valdar.adventofcode.day4;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Main {
@@ -27,16 +20,21 @@ public class Main {
     private static void parseAndSolve(String fileName, Boolean useSecondSolver ) {
         System.out.println(useSecondSolver ? "Second Part solver" : "First Part Solver");
         try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
-            if ( useSecondSolver ) {
-                System.out.format("Number of possible triangles is: %d \n", Functions.countPossibleTrianglesByColumn(stream));
+            if(useSecondSolver) {
+                System.out.print("The sector ID of \"northpole object storage\" room is: ");
+                stream.map(s -> Functions.parseInput(s))
+                        .filter(r -> r.isValidRoom())
+                        .filter( vr -> vr.decodeRoomName().equals("northpole object storage") )
+                        .forEach( theroom -> System.out.print(  theroom.getCode() ) );
+                System.out.print("\n");
             } else {
-                System.out.format("Number of possible triangles is: %d \n", Functions.countPossibleTrianglesByRow(stream));
+                System.out.format("The sum of valid room code is %d\n",
+                        stream.map(s -> Functions.parseInput(s)).filter(r -> r.isValidRoom()).mapToInt(vr -> vr.getCode()).sum());
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
 }
 
 
