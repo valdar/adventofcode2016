@@ -51,7 +51,7 @@ public class Day4Tests {
     @Test
     public void roomdecodeNameTest() {
         Room room = Functions.parseInput("qzmt-zixmtkozy-ivhz-343[abxyz]\n");
-        
+
         assertEquals( "very encrypted name", room.decodeRoomName());
     }
 }
