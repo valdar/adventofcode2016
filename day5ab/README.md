@@ -6,9 +6,10 @@ Refer to http://adventofcode.com/2016/5
 #to build it
 mvn clean package
 #to run the part 1 solver
-java -jar target/day5ab-1.0-SNAPSHOT.jar ./src/test/resources/input.txt false
-#to run the part 2 solver
-java -jar target/day5ab-1.0-SNAPSHOT.jar ./src/test/resources/input.txt true
+java -jar target/day5ab-1.0-SNAPSHOT.jar abbhdwsy false
+#to run the part 2 solver:
+#WARNING: this is going to take a while not done in the most efficent way
+java -jar target/day5ab-1.0-SNAPSHOT.jar abbhdwsy true
 ```
 ## Day 5: How About a Nice Game of Chess?
 
