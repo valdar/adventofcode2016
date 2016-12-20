@@ -32,15 +32,14 @@ public class Day7Tests {
 
     @Test
     public void parser2Test() throws NoSuchAlgorithmException, UnsupportedEncodingException {
-//        assertTrue( Functions.parse2( "aba[bab]xyz" ) );
-//        assertFalse( Functions.parse2( "xyx[xyx]xyx" ) );
-//        assertTrue( Functions.parse2( "aaa[kek]eke" ) );
-//        assertTrue( Functions.parse2( "zazbz[bzb]cdb" ) );
+        assertTrue( Functions.parse2( "aba[bab]xyz" ) );
+        assertFalse( Functions.parse2( "xyx[xyx]xyx" ) );
+        assertTrue( Functions.parse2( "aaa[kek]eke" ) );
+        assertTrue( Functions.parse2( "zazbz[bzb]cdb" ) );
 
         assertTrue( Functions.parse2( "xxxxxzazbz[xaxaxaxbx]cbcbxb" ) );
 
-//        assertFalse( Functions.parse2( "sqtxgdsfkbhljmt[ndqljydrgqwwqjayc]lttwcrsejwxgxkuawgm[nefpbdmgtizfijyt]dcxacpeeyuzkemb[otnbznolvwiervj]hdcjffxyhtqdjmaipj" ) );
-
+        assertFalse( Functions.parse2( "sqtxgdsfkbhljmt[ndqljydrgqwwqjayc]lttwcrsejwxgxkuawgm[nefpbdmgtizfijyt]dcxacpeeyuzkemb[otnbznolvwiervj]hdcjffxyhtqdjmaipj" ) );
     }
 
 }
