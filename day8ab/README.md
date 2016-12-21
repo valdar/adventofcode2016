@@ -1,5 +1,5 @@
 # adventofcode2016 Day8 part 1 and 2
-Refer to http://adventofcode.com/2016/7
+Refer to [http://adventofcode.com/2016/8](http://adventofcode.com/2016/8)
 
 ## Build and run the solutions
 ```bash
